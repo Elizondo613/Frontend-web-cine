@@ -1,0 +1,19 @@
+.footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #1B263B;
+  color: white;
+  margin-top: auto;
+  font-size: 0.9rem;
+  border-top: 2px solid #E63946;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem 0;
+    font-size: 0.8rem;
+  }
+}

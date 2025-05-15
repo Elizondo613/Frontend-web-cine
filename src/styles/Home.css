@@ -1,0 +1,122 @@
+.home {
+  padding: 0;
+  text-align: center;
+  background-color: #F5F5F5;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/carousel-bg.jpg') no-repeat center center/cover;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.carousel p {
+  font-size: 1.4rem;
+  max-width: 600px;
+}
+
+.salas {
+  padding: 3rem 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.salas h2 {
+  font-size: 2.2rem;
+  color: #2D2D2D;
+  margin-bottom: 2rem;
+}
+
+.sala-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sala-card {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sala-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sala-card h3 {
+  font-size: 1.4rem;
+  color: #1B263B;
+  margin-bottom: 0.5rem;
+}
+
+.sala-card p {
+  font-size: 1rem;
+  color: #2D2D2D;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel {
+    height: 400px;
+  }
+
+  .carousel h1 {
+    font-size: 2.2rem;
+  }
+
+  .carousel p {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+
+  .salas {
+    padding: 2rem 5%;
+  }
+
+  .salas h2 {
+    font-size: 1.8rem;
+  }
+
+  .sala-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel h1 {
+    font-size: 1.8rem;
+  }
+
+  .carousel p {
+    font-size: 1rem;
+  }
+
+  .salas h2 {
+    font-size: 1.5rem;
+  }
+}
